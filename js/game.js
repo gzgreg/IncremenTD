@@ -27,9 +27,9 @@ var C = require('./data/constants.js');
 var game = new Phaser.Game(800, 800, Phaser.AUTO, 'gameContainer', { preload: preload, create: create, update: update });
 
 function preload() {
-	game.load.image('tower', 'assets/tower.png');
-	game.load.image('creep', 'assets/creep.png');
-	game.load.image('bullet', 'assets/bullet.png');
+	game.load.image('tower', 'assets/Tower.png');
+	game.load.image('creep', 'assets/Creep.png');
+	game.load.image('bullet', 'assets/Bullet.png');
 
 	game.load.tilemap('map', "assets/map.json", null, Phaser.Tilemap.TILED_JSON);
 	game.load.image('tiles', 'assets/tileset.jpg');

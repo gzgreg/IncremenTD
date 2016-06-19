@@ -1,0 +1,23 @@
+{
+  "name": "IncremenTD",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "alt": "^0.18.1",
+    "alt-container": "^1.0.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.11.2",
+    "phaser": "^2.4.4",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "grunt-contrib-connect": "^0.11.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

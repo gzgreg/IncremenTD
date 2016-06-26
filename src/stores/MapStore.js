@@ -25,9 +25,9 @@ class MapStore {
 	}
 
 	static isOccupied(mapData, x, y){
-		return mapData[x][y+C.tileOffset] == 1 || y === 0 || 
-				y == map.height - C.tileOffset - 1 ||
-				y == map.height - C.tileOffset - 2;
+		//TODO: add check for creeps
+		return mapData[x][y] === 1 || y <= C.tileOffset || 
+				y >= map.height - 2;
 	}
 
 	static dijkstra(mapData, pathData){

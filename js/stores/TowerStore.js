@@ -22,6 +22,7 @@ var TowerStore = (function () {
 		key: "buy",
 		value: function buy() {
 			if (this.canBuild <= 0) return;
+			console.log("asdf");
 			this.game.input.onDown.addOnce(function (pointer) {
 				var x = Math.floor(this.game.input.x / C.tileSize);
 				var yScreen = Math.floor(this.game.input.y / C.tileSize);
@@ -30,7 +31,8 @@ var TowerStore = (function () {
 
 				var mapData = MapStoreInstance.getState().mapData;
 				var pathData = MapStoreInstance.getState().pathData;
-
+				console.log(x);
+				console.log(y);
 				if (MapStore.isOccupied(mapData, x, y)) return;
 				mapData[x][y] = 1;
 				MapStore.dijkstra(mapData, pathData);
